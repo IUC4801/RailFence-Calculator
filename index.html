@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <link rel="stylesheet" href="style.css">
+    <title>Railfence Calculator</title>
+  </head>
+  <body>
+    <h1>RailFence Calculator</h1>
+
+
+    <div id="form-main">
+      <!--action="javascript:void(0);" stops the page from refreshing after the first submition-->
+      <form id="forms" >
+        <label for="ptext" style="font-size: 20px; color: darkblue;"><b>PLAIN TEXT:</b></label><br>
+        <input type="text" class="inputvalues" id="ptext" name="ptext" placeholder="Enter Plain Text"><br><br>
+
+        <label for="ctext" style="font-size: 20px; color:darkred;"><b>CIPHER TEXT:</b></label><br>
+        <input type="text" class="inputvalues" id="ctext" name="ctext" placeholder="Enter Encrypted Text"><br><br><br>
+
+        <div id="key-group">
+          <label for="key" style="font-size: 20px; color:darkslategrey;"><b>RAILS:</b></label>
+          <input type="number" style="font-size: 20px; color:darkslategrey;" id="key" name="key" min="2"><br>
+        </div>
+      </form> 
+    </div>
+    
+    <div id="buttons">
+      <button id="encryptB" form="forms" class="btn_encrypt">Encrypt</button>
+      <button id="decryptB" form="forms" class="btn_decrypt">Decrypt</button>
+    </div>
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
